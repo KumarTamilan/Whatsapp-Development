@@ -1,0 +1,173 @@
+	private static void triangle() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void decreaseTriangle() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = i; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void increaseTriangle() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void rightSideTriangle() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = i; j < 5; j++) {
+				System.out.print("    ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void leftSideTriangle() {
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j < i; j++) {
+				System.out.print("    ");
+			}
+			for (int j = i; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void hillPattern() {
+
+		for (int i = 1; i <= 4; i++) {
+			for (int j = i; j <= 5; j++) {
+				System.out.print("    ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("K  ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void reverseHillPattern() {
+
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("    ");
+			}
+			for (int j = i; j < 5; j++) {
+				System.out.print("K  ");
+			}
+			for (int j = i; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void butterfly() {
+
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("K  ");
+			}
+			for (int j = i; j < 5; j++) {
+				System.out.print("    ");
+			}
+			for (int j = i; j < 5; j++) {
+				System.out.print("    ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+		for (int i = 1; i <= 5; i++) {
+			for (int j = i; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("    ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("    ");
+			}
+			for (int j = i; j <= 5; j++) {
+				System.out.print("K  ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void starPattern() {
+
+		for (int i = 1; i < 5; i++) {
+			for (int j = i; j <= 5; j++) {
+				System.out.print("2 ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("   ");
+			}
+			for (int j = 1; j < i; j++) {
+				System.out.print("   ");
+			}
+			for (int j = i; j <= 5; j++) {
+				System.out.print("2 ");
+			}
+			System.out.println();
+		}
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("2 ");
+			}
+			for (int j = i; j < 5; j++) {
+				System.out.print("   ");
+			}
+			for (int j = i; j < 5; j++) {
+				System.out.print("   ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("2 ");
+			}
+			System.out.println();
+		}
+
+	}
+
+	public static void forloop() {
+
+		for (int a = 10; a >= 1; a--) {
+			System.out.println(a);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		//triangle();
+
+		decreaseTriangle();
+		/*
+		 * increaseTriangle(); rightSideTriangle(); leftSideTriangle(); hillPattern();
+		 * reverseHillPattern(); butterfly(); starPattern();
+		 * 
+		 * forloop();
+		 */
+
+	}
+}
